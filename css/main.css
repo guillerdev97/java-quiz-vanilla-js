@@ -2,26 +2,52 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    height: 70vh;
 }
 
 .questionsContainer {
+    width: 50%;
+    height: 50vh;
+    border: 2px solid rgb(6, 120, 206);
+    border-radius: 5px;
+}
+.questionHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    padding: 7px;
+    color: white;
+    background-color: rgb(6, 120, 206);
+}
+.questionHeader h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+.questionBody {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
-    height: 200px;
-}
-.questionsContainer h3 {
-    font-size: 30px;
+    height: 38vh;
 }
 .questionsList {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     width: 50%;
-    height: 100px;
+    height: 150px;
     font-size: 22px;
+    border: 1px solid rgb(6, 120, 206);
+    border-radius: 5px;
+}
+.submitButton {
+    cursor: pointer;
+    width: 12%;
+    padding: 7px;
+    color: white;
+    background-color: rgb(6, 120, 206);
+    border-radius: 5px;
+    font-size: 18px;
 }

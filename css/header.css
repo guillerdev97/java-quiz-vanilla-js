@@ -2,8 +2,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 18vh;
+    background-color: rgb(6, 120, 206);
 }
 header h1 {
-    color: rgba(18, 66, 198, 0.909);
+    color: white;
     font-size: 60px;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
