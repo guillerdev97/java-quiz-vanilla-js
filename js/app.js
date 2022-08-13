@@ -24,7 +24,7 @@ submitButton.addEventListener("click", () => {
         score += 1;
     }
 
-    if(currentQuizData === 2) {
+    if(currentQuizData === (quizData.length - 1)) {
         alert("Quiz game has finished!");
         alert(`Score: ${score}`);
         return;
