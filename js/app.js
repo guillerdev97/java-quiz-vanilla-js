@@ -9,6 +9,7 @@ const questionC = document.getElementById("questionC");
 const submitButton = document.getElementById("submitButton");
 
 let currentQuizData = 0;
+let score = 0;
 
 questionText.innerText = quizData[currentQuizData].question;
 questionA.innerText = quizData[currentQuizData].a;
@@ -17,8 +18,15 @@ questionC.innerText = quizData[currentQuizData].c;
 
 
 submitButton.addEventListener("click", () => {
-    if(currentQuizData === 3) {
+    const checkedInput = document.querySelector('input[name="answer"]:checked');
+
+    if(checkedInput.value === quizData[currentQuizData].correct) {
+        score += 1;
+    }
+
+    if(currentQuizData === 2) {
         alert("Quiz game has finished!");
+        alert(`Score: ${score}`);
         return;
     }
 
@@ -29,6 +37,5 @@ submitButton.addEventListener("click", () => {
     questionB.innerText = quizData[currentQuizData].b;
     questionC.innerText = quizData[currentQuizData].c;
 
-    const checkedInput = document.querySelector('input[name="answer"]:checked');
     checkedInput.checked = false;
 })
