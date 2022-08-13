@@ -1,0 +1,27 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.questionsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 200px;
+}
+.questionsContainer h3 {
+    font-size: 30px;
+}
+.questionsList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 50%;
+    height: 100px;
+    font-size: 22px;
+}
