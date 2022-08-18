@@ -2,45 +2,74 @@
 
 export const quizData = [
     {
-        question: "President of the United States:",
-        a: "Donald Trump",
-        b: "Joe Biden",
-        c: "Cristiano Ronaldo",
-        correct: "b"
+        question: `Correct syntax to output "Hello World":`,
+        a: "System.out.println()",
+        b: "print()",
+        c: "Hello World",
+        correct: "a",
     },
     {
-        question: "Largest population in the world:",
-        a: "China",
-        b: "India",
-        c: "EEUU",
-        correct: "a"
+        question: "Create a variable with the numeric value 5:",
+        a: "integer num = 5",
+        b: "num = 5",
+        c: "int num = 5",
+        d: "num = int 5",
+        correct: "c",
     },
     {
-        question: "Soccer team in Spain with the most followers:",
-        a: "Barcelona",
-        b: "Valencia",
-        c: "Real Madrid",
-        correct: "c"
+        question: "Method to find the length of a string:",
+        a: "strlength()",
+        b: "length()",
+        c: "str.length()",
+        correct: "b",
     },
     {
-        question: "Birth name (Greco - painter):",
-        a: "Esteban",
-        b: "John",
-        c: "Doménikos",
-        correct: "c"
+        question: "Operator used to add together two values:",
+        a: "+",
+        b: "-",
+        c: "*",
+        correct: "a",
     },
     {
-        question: "Oldest programming language:",
-        a: "Python",
-        b: "PHP",
-        c: "C++",
-        correct: "c"
+        question: "Operator used to compare two values:",
+        a: "<",
+        b: "<",
+        c: "=",
+        correct: "c",
     },
     {
-        question: "Number of children of Elon Musk:",
-        a: 5,
-        b: 3,
-        c: 10,
-        correct: "c"
-    }
+        question: "COMMENTS in code:",
+        a: "//",
+        b: "**",
+        c: "isComment()",
+        correct: "a",
+    },
+    {
+        question: "Array, variable type with:",
+        a: "[]",
+        b: "{}",
+        c: "()",
+        correct: "a",
+    },
+    {
+        question: "Create a method:",
+        a: "method() {}",
+        b: "method()",
+        c: "create method",
+        correct: "a",
+    },
+    {
+        question: "Keyword used to create a class:",
+        a: "Class",
+        b: "new Class",
+        c: "class",
+        correct: "c",
+    },
+    {
+        question: "Operator used to multiply numbers?",
+        a: "+",
+        b: "*",
+        c: "/",
+        correct: "b",
+    },
 ]
