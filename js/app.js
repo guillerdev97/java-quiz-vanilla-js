@@ -2,6 +2,9 @@
 
 import { quizData } from "./data.js";
 
+const player = document.getElementById("player");
+const playerName = document.getElementById("playerName");
+const addButton = document.getElementById("addButton");
 const questionText = document.getElementById("questionText");
 const questionA = document.getElementById("questionA");
 const questionB = document.getElementById("questionB");
@@ -11,11 +14,15 @@ const submitButton = document.getElementById("submitButton");
 let currentQuizData = 0;
 let score = 0;
 
+addButton.addEventListener("click", () => {
+    player.innerText += ` ${playerName.value}`;
+    playerName.value = "";
+})
+
 questionText.innerText = quizData[currentQuizData].question;
 questionA.innerText = quizData[currentQuizData].a;
 questionB.innerText = quizData[currentQuizData].b;
 questionC.innerText = quizData[currentQuizData].c;
-
 
 submitButton.addEventListener("click", () => {
     const checkedInput = document.querySelector('input[name="answer"]:checked');
@@ -27,6 +34,7 @@ submitButton.addEventListener("click", () => {
     if(currentQuizData === (quizData.length - 1)) {
         alert("Quiz game has finished!");
         alert(`Score: ${score}`);
+        location.reload();
         return;
     }
 
