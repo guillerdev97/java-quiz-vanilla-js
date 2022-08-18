@@ -6,8 +6,15 @@ header {
     background-color: rgb(6, 120, 206);
 }
 header h1 {
+    margin-right: 100px;
     color: white;
     font-size: 60px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+header h2 {
+    color: white;
+    font-size: 24px;
     letter-spacing: 1px;
     font-weight: bold;
 }
