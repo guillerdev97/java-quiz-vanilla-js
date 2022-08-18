@@ -11,7 +11,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 30%;
-    height: 100px;
+    height: 120px;
     border: 2px solid rgb(6, 120, 206);
     border-radius: 5px;
 }
@@ -21,7 +21,16 @@ main {
 }
 .inputContainer div input {
     height: 25px;
+    margin-bottom: 5px;
     padding: 3px;
+}
+.addButton {
+    cursor: pointer;
+    width: 17%;
+    padding: 3px;
+    color: white;
+    background-color: rgb(6, 120, 206);
+    border-radius: 5px;
 }
 
 .questionsContainer {
@@ -60,6 +69,9 @@ main {
     font-size: 22px;
     border: 1px solid rgb(6, 120, 206);
     border-radius: 5px;
+}
+.questionsList li input {
+    cursor: pointer;
 }
 .submitButton {
     cursor: pointer;
